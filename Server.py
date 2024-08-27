@@ -20,7 +20,7 @@ class ArcFace(tf.keras.layers.Layer):
         self.n_classes = n_classes
         self.s = s
         self.m = m
-        self.W = self.add_weight(name='W', shape=(512, n_classes), initializer='glorot_uniform', trainable=True)
+        self.W = self.add_weight(name='W', shape=(256, n_classes), initializer='glorot_uniform', trainable=True)
 
     def call(self, inputs):
         x, y = inputs
